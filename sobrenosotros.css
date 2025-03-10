@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+                 0 0 20px rgba(255, 255, 255, 0.4);
+    font-weight: 500;
+    font-size: 3rem; /* Usamos unidades relativas */
+    margin-bottom: 20px;
+}
+
+.inicio-container {
+    display: flex;
+    flex-direction: column; /* Cambia a columna en móviles */
+    align-items: center;
+    gap: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.inicio-container p {
+    color: white;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+                 0 0 20px rgba(255, 255, 255, 0.4);
+    font-weight: 500;
+    font-size: 1.2rem; /* Usamos unidades relativas */
+    line-height: 1.6;
+    text-align: center; /* Centramos el texto */
+}
+
+img {
+    height: 400px; /* Mantiene la proporción de la imagen */
+    border-radius: 10px;
+}
+
+/* Media Queries para ajustes en diferentes tamaños de pantalla */
+@media (min-width: 768px) {
+    .inicio-container {
+        flex-direction: row; /* Volvemos a la disposición en fila en pantallas más grandes */
+    }
+
+    h1 {
+        font-size: 4rem; /* Aumentamos el tamaño del título en pantallas grandes */
+    }
+
+    .inicio-container p {
+        font-size: 1.5rem; /* Aumentamos el tamaño del texto en pantallas grandes */
+    }
+}
